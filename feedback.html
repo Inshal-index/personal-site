@@ -19,8 +19,21 @@
         <button class="btn"><a href="feedback.html">Feedback</a></button>
     </div>
     <div class="bg">
-        <div class="content">
-        <h2>Tell me your thoughts</h2>
+        <div class="feedback-container">
+            <h2>Tell me your thoughts</h2>
+
+            <form class="contact-form" action="https://formsubmit.co/inshalahmad421@gmail.com" method="POST">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Share your thoughts..." required></textarea>
+
+                <input type="hidden" name="_subject" value="New website feedback">
+                <input type="hidden" name="_captcha" value="false">
+
+                <button type="submit" class="btn submit-btn">Send</button>
+            </form>
         </div>
     </div>
     <div class="footer">

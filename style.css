@@ -84,6 +84,42 @@ body {
     margin: 0;
 }
 
+.feedback-container {
+    width: min(500px, 90%);
+    color: white;
+    text-align: left;
+    margin-top: 0;
+}
+
+.feedback-container h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
 .btn {
     text-decoration: none;
     background-color: rgb(18, 232, 232);
@@ -105,4 +141,11 @@ body {
     text-decoration: none;
     color: #636060;
     font-weight: 600;
+}
+
+.submit-btn {
+    align-self: center;
+    cursor: pointer;
+    color: #1f1f1f;
+    font-weight: 700;
 }
